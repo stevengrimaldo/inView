@@ -20,6 +20,7 @@ var inView = function(el) {
   var eTop = elTop + elOffset;
   var eBottom = elTop + elHeight - offsetTop;
 
+  // return true or false
   return (eTop <= cBottom && eBottom >= elOffset);
 };
 
