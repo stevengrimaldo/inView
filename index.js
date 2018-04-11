@@ -24,13 +24,13 @@ var inView = function(el) {
 };
 
 var checkVisibility = function() {
-	for (var section of sections) {
-	  if (inView(section)) {
-			section.classList.add('in-view');
-		} else {
-			section.classList.remove('in-view');
-		}
-	}
+  for (var section of sections) {
+    if (inView(section)) {
+      section.classList.add('in-view');
+    } else {
+      section.classList.remove('in-view');
+    }
+  }
 };
 
 window.addEventListener('load', checkVisibility, false);
